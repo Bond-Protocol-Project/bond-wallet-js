@@ -9,7 +9,7 @@ import { getChainNameFromChainId, getUsdcAddressByChainName } from "../utils/hel
 
 async function main() {
     // Your private key (KEEP THIS SECRET!)
-    const privateKey = '0x2bb758569718e4ac67a8164d98cadd08068e5839a6cb7c8bd4e769893818ddbf';
+    const privateKey = '';
 
     // Create an account from the private key
     const pk = privateKeyToAccount(privateKey);
