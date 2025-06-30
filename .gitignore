@@ -16,4 +16,4 @@
 # Compilation output
 /dist
 
-/src/tests/test.ts
+src/tests/test.ts

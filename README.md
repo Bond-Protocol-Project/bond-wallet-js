@@ -46,7 +46,7 @@ The Bond Wallet SDK is a TypeScript/JavaScript library that provides a simple an
 ### NPM
 
 ```bash
-npm install bond-wallet-js
+npm install bond-wallet-sdk
 ```
 
 ---
