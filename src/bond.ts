@@ -272,8 +272,6 @@ export class Bond {
                 balance: _balance
             })
 
-            console.log("balance:", balance);
-
             uBal += _balance;
 
             if (_chainId == this.walletClient.chain!.id) {
