@@ -15,3 +15,5 @@
 
 # Compilation output
 /dist
+
+/src/tests/test.ts
