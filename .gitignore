@@ -12,3 +12,6 @@
 
 # Hardhat coverage reports
 /coverage
+
+# Compilation output
+/dist

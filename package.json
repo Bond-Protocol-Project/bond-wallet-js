@@ -1,5 +1,5 @@
 {
-  "name": "bond-wallet",
+  "name": "bond-wallet-js",
   "version": "0.0.1",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -9,7 +9,7 @@
     "build": "tsc",
     "prepublishOnly": "npm run build"
   },
-  "keywords": ["erc4337"],
+  "keywords": ["erc4337", "smart account"],
   "author": "Anurigwo Chibuzor",
   "license": "MIT",
   "description": "",
