@@ -82,7 +82,7 @@ console.log("Bond Smart Account:", address);
 Before interacting with any chain you must activate your address. This will make your Bond experience smooth
 
 ```typescript
-// Activate sepolia address, repeat this steap for other chains
+// Activate sepolia address, repeat this step for other chains
 const response = await bondWallet.activate("sepolia");
 console.log(response);
 ```
