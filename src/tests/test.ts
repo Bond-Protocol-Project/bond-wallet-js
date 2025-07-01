@@ -9,7 +9,7 @@ import { getChainNameFromChainId, getUsdcAddressByChainName } from "../utils/hel
 
 async function main() {
     // Your private key (KEEP THIS SECRET!)
-    const privateKey = '';
+    const privateKey = '0x0000000000';
 
     // Create an account from the private key
     const pk = privateKeyToAccount(privateKey);
@@ -71,25 +71,25 @@ async function main() {
     // const balance = await bond.getBalance();
     // console.log("balance:", balance);
 
-    // const intent = await account.intent.raw({
-    //     token: "USDC",
-    //     source: [
-    //         {
-    //             amount: 2n,
-    //             chain: "avalanche_fuji"
-    //         },
-    //         {
-    //             amount: 2n,
-    //             chain: "arbitrum_sepolia"
-    //         }
-    //     ],
-    //     destChain: "polygon_amoy",
-    //     destDatas: [{
-    //         target: "0x",
-    //         value: 0n,
-    //         data: "0x"
-    //     }]
-    // });
+    const intent = await account.intent.raw({
+        token: "USDC",
+        source: [
+            {
+                amount: 2n,
+                chain: "avalanche_fuji"
+            },
+            {
+                amount: 2n,
+                chain: "arbitrum_sepolia"
+            }
+        ],
+        destChain: "polygon_amoy",
+        destDatas: [{
+            target: "0x",
+            value: 0n,
+            data: "0x"
+        }]
+    });
 
     // const intent = await account.intent.direct({
     //     token: "USDC",

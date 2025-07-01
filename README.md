@@ -111,6 +111,42 @@ const userOpHash = await intent.send();
 console.log("Intent submitted:", userOpHash);
 ```
 
+### Sending raw Cross-Chain Intent
+
+Let's say you want to interact with a contract on the destination chain you can use the raw method instead
+
+```typescript
+
+// Create cross-chain raw intent
+const intent = await account.intent.raw({
+    token: "USDC",
+    source: [
+        {
+            amount: 2n,
+            chain: "avalanche_fuji"
+        },
+        {
+            amount: 2n,
+            chain: "arbitrum_sepolia"
+        }
+    ],
+    destChain: "polygon_amoy",
+    // define array of executions to be executed in destination chain
+    // for example you can add and approve transaction data and the contract interaction data 
+    destDatas: [
+        {
+            target: "0x",
+            value: 0n,
+            data: "0x"
+        }
+    ]
+});
+
+// Execute the intent
+const userOpHash = await intent.send();
+console.log("Intent submitted:", userOpHash);
+```
+
 ---
 
 ## API Reference
